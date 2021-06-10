@@ -407,7 +407,7 @@ class ShowInterface(ShowInterfaceSchema):
         #0 runts  0 giants  0 CRC  0 no buffer
         p27 = re.compile(r'^(?P<in_runts>[0-9]+) *runts'
                          r' *(?P<in_oversize_frame>[0-9]+) *giants'
-                         r' *(?P<in_crc_errors>[0-9]+) *CRC(/FCS)?'
+                         r' *(?P<in_crc_errors>[0-9]+) *CRC(\/FCS)?'
                          r' *(?P<in_no_buffer>[0-9]+) *no *buffer$')
 
         #0 input error  0 short frame  0 overrun   0 underrun  0 ignored
